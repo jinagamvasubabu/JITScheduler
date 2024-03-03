@@ -3,8 +3,9 @@ package kafka
 import (
 	"context"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
 	"github.com/Shopify/sarama"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	localConfig "github.com/jinagamvasubabu/JITScheduler-svc/config"
 	"go.uber.org/zap"
 )
 
@@ -25,7 +26,7 @@ func NewSyncProducer() (p Producer, err error) {
 	config.Producer.RequiredAcks = sarama.WaitForAll
 	config.Producer.Return.Successes = true
 	// sync producer
-	prd, err := sarama.NewSyncProducer([]string{"localhost:9092"}, config)
+	prd, err := sarama.NewSyncProducer([]string{localConfig.GetConfig().KafkaBrokerUrl}, config)
 	if err != nil {
 		logger.Error("Error while creating a new sync producer", zap.Error(err))
 		return nil, err

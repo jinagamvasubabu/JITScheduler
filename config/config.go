@@ -8,17 +8,17 @@ var cfg Config
 
 type Config struct {
 	PgPort              string `yaml:"pgPort" env:"pgPort" env-default:"5432"`
-	PgHost              string `yaml:"pgHost" env:"pgHost" env-default:"localhost"`
+	PgHost              string `yaml:"pgHost" env:"pgHost" env-default:"postgres"`
 	PgUser              string `yaml:"pgUser" env:"pgUser" env-default:"pg"`
 	PgPassword          string `yaml:"pgPassword" env:"pgPassword" env-default:"pass"`
 	DB                  string `yaml:"db" env:"db" env-default:"JITScheduler"`
 	Migrate             bool   `yaml:"migrate" env:"migrate" env-default:"true"`
 	LogLevel            string `yaml:"logLevel" env:"logLevel" env-default:"info"`
-	PORT                int    `yaml:"port" env:"port" env-default:"4001"`
+	PORT                int    `yaml:"port" env:"port" env-default:"3000"`
 	HOST                string `yaml:"host" env:"port" env-default:"localhost"`
 	MaxOpenConnections  int    `yaml:"maxOpenConnections" env:"port" env-default:"5"`
-	KafkaBrokerUrl      string `yaml:"kafkaBrokerUrl" env:"kafkaBrokerUrl" env-default:"localhost:9092"`
-	RedisHost           string `yaml:"redisHost" env:"redisHost" env-default:"localhost:6379"`
+	KafkaBrokerUrl      string `yaml:"kafkaBrokerUrl" env:"kafkaBrokerUrl" env-default:"kafka:9092"`
+	RedisHost           string `yaml:"redisHost" env:"redisHost" env-default:"redis:6379"`
 	ReschedulerCronSpec string `yaml:"reschedulerCronSpec" env:"reschedulerCronSpec" env-default:"1s"`
 	MonitorCronSpec     string `yaml:"monitorCronSpec" env:"monitorCronSpec" env-default:"5m"`
 	KafkaTopic          struct {

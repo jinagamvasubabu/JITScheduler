@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
-	"github.com/Buddy-Git/JITScheduler-svc/model/dto"
-	"github.com/Buddy-Git/JITScheduler-svc/service"
 	"github.com/gorilla/mux"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model/dto"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service"
 	"go.uber.org/zap"
 )
 
@@ -112,7 +112,7 @@ func (h tenantHandler) FetchAllTenants(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//CHANGE THIS TO DEACTIVATE TENANT
+// CHANGE THIS TO DEACTIVATE TENANT
 func (h tenantHandler) DeactivateTenant(w http.ResponseWriter, r *http.Request) {
 	// Read dynamic id parameter
 	vars := mux.Vars(r)

@@ -5,13 +5,13 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	db "github.com/Buddy-Git/JITScheduler-svc/adapters/persistence"
-	"github.com/Buddy-Git/JITScheduler-svc/config"
-	"github.com/Buddy-Git/JITScheduler-svc/constants"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
-	"github.com/Buddy-Git/JITScheduler-svc/repository"
-	"github.com/Buddy-Git/JITScheduler-svc/service/kafka"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	db "github.com/jinagamvasubabu/JITScheduler-svc/adapters/persistence"
+	"github.com/jinagamvasubabu/JITScheduler-svc/config"
+	"github.com/jinagamvasubabu/JITScheduler-svc/constants"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/repository"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service/kafka"
 	"go.uber.org/zap"
 )
 

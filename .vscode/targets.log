@@ -6,11 +6,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
 
-
-# Make data base, printed on Thu Jul  7 12:35:24 2022
+# Make data base, printed on Sun Mar  3 16:04:04 2024
 
 # Variables
 
@@ -19,76 +16,99 @@ make: *** No rule to make target `all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-VSCODE_LOG_NATIVE = false
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
+# environment
+PERIOD = 30
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
 # makefile
-CURDIR := /Users/kritikjain/Desktop/JITScheduler_svc
- 
+CURDIR := /Users/vasubabujinagam/Documents/Repositories/go/JITScheduler-svc
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-gb","osLocale":"en-in","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ZPLUG_CONFIG_SUBSHELL = :
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+ZPLUG_THREADS = 16
 # environment
-VSCODE_VERBOSE_LOGGING = true
+ZPLUG_FILTER = fzf-tmux:fzf:peco:percol:fzy:zaw
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/bz/p0g746p96xd5ypb5nxgwwk7h0000gq/T/vscode-ipc-d5447dfe-1b81-45f6-a264-3ebbc30d56a5.sock
+INFOPATH = /opt/homebrew/share/info:
+# environment
+_ZPLUG_VERSION = 2.4.2
 # environment
 VSCODE_CWD = /
 # environment
-GOPROXY = https://proxy.golang.org,direct
-# environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+PATH = /Users/vasubabujinagam/.nvm/versions/node/v18.17.1/bin:/opt/homebrew/Cellar/zplug/2.4.2/bin:/Users/vasubabujinagam/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/go/bin
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-GOPATH = /Users/kritikjain/go
+FPATH = /opt/homebrew/Cellar/zplug/2.4.2/autoload:/opt/homebrew/Cellar/zplug/2.4.2/misc/completions:/opt/homebrew/Cellar/zplug/2.4.2/base/sources:/opt/homebrew/Cellar/zplug/2.4.2/base/utils:/opt/homebrew/Cellar/zplug/2.4.2/base/job:/opt/homebrew/Cellar/zplug/2.4.2/base/log:/opt/homebrew/Cellar/zplug/2.4.2/base/io:/opt/homebrew/Cellar/zplug/2.4.2/base/core:/opt/homebrew/Cellar/zplug/2.4.2/base/base:/opt/homebrew/Cellar/zplug/2.4.2/autoload/commands:/opt/homebrew/Cellar/zplug/2.4.2/autoload/options:/opt/homebrew/Cellar/zplug/2.4.2/autoload/tags:/Users/vasubabujinagam/.oh-my-zsh/functions:/Users/vasubabujinagam/.oh-my-zsh/completions:/Users/vasubabujinagam/.oh-my-zsh/cache/completions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/opt/homebrew/opt/zplug/repos/zdharma/fast-syntax-highlighting/functions
 # environment
-VSCODE_LOG_STACK = false
+ZPLUG_HOME = /opt/homebrew/opt/zplug
+# environment
+ZPLUG_CACHE_DIR = /opt/homebrew/opt/zplug/cache
+# environment
+NVM_BIN = /Users/vasubabujinagam/.nvm/versions/node/v18.17.1/bin
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Lsf8ArH3ON/Listeners
+LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.qpYNLFmtyz/Listeners
 # automatic
 %F = $(notdir $%)
+# default
+MAKEFILES := 
 # environment
-VSCODE_PIPE_LOGGING = true
+ZPLUG_PROTOCOL = HTTPS
 # environment
-PWD = /Users/kritikjain/Desktop/JITScheduler_svc
+PWD = /Users/vasubabujinagam/Documents/Repositories/go/JITScheduler-svc
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-GOMODCACHE = /Users/kritikjain/go/pkg/mod
+_ZPLUG_URL = https://github.com/zplug/zplug
 # environment
-HOME = /Users/kritikjain
+MANPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/share/man:/Library/Developer/CommandLineTools/usr/share/man:/Library/Developer/CommandLineTools/Toolchains/XcodeDefault.xctoolchain/usr/share/man:/Users/vasubabujinagam/.nvm/versions/node/v18.17.1/share/man:/opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/vasubabujinagam
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/kritikjain/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /Users/vasubabujinagam/Library/Application Support/Code/CachedData/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2
 # environment
-LOGNAME = kritikjain
+LOGNAME = vasubabujinagam
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
-ZSH = /Users/kritikjain/.oh-my-zsh
+NVM_CD_FLAGS = -q
+# environment
+ZSH = /Users/vasubabujinagam/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
+# environment
+ZPLUG_BIN = /opt/homebrew/opt/zplug/bin
+# environment
+_ZPLUG_PREZTO = sorin-ionescu/prezto
 # environment
 XPC_FLAGS = 0x0
 # default
@@ -100,9 +120,9 @@ SHLVL = 1
 # default
 MAKE_VERSION := 3.81
 # environment
-USER = kritikjain
+USER = vasubabujinagam
 # makefile
-.DEFAULT_GOAL := get-docs
+.DEFAULT_GOAL := run
 # environment
 LESS = -R
 # automatic
@@ -112,11 +132,15 @@ MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # default
 .VARIABLES := 
 # environment
-TMPDIR = /var/folders/bz/p0g746p96xd5ypb5nxgwwk7h0000gq/T/
+TMPDIR = /var/folders/r_/xxys9_ss6j5cj6_528wtccm80000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/kritikjain/Library/Application Support/Code/1.68.1-main.sock
+VSCODE_IPC_HOOK = /Users/vasubabujinagam/Library/Application Support/Code/1.85-main.sock
+# environment
+MallocNanoZone = 0
+# environment
+_ZPLUG_AWKPATH = /opt/homebrew/Cellar/zplug/2.4.2/misc/contrib
 # makefile
 MAKEFLAGS = Rrqp
 # environment
@@ -124,37 +148,53 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.3737247.3737253
+NVM_DIR = /Users/vasubabujinagam/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.5355267.5355273
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-__CF_USER_TEXT_ENCODING = 0x1F7:0:2
+ZPLUG_USE_CACHE = true
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+ZPLUG_REPOS = /opt/homebrew/opt/zplug/repos
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
 # environment
 COMMAND_MODE = unix2003
-# default
-MAKEFILES := 
+# environment
+ZPLUG_ROOT = /opt/homebrew/Cellar/zplug/2.4.2
 # automatic
 <F = $(notdir $<)
 # environment
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+CONDA_CHANGEPS1 = no
+# environment
+_ZPLUG_OHMYZSH = robbyrussell/oh-my-zsh
 # automatic
 ^F = $(notdir $^)
+# environment
+ZPLUG_ERROR_LOG = /opt/homebrew/opt/zplug/.error_log
 # default
 SUFFIXES := 
-# default
-.INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
 # environment
+ZPLUG_LOADFILE = /opt/homebrew/opt/zplug/packages.zsh
+# environment
 LANG = C
 # environment
-VSCODE_PID = 83045
+VSCODE_PID = 72447
 # variable set hash-table stats:
-# Load=69/1024=7%, Rehash=0, Collisions=2/93=2%
+# Load=91/1024=9%, Rehash=0, Collisions=6/114=5%
 
 # Pattern-specific Variable Values
 
@@ -162,9 +202,9 @@ VSCODE_PID = 83045
 
 # Directories
 
-# . (device 16777220, inode 4462304): 21 files, no impossibilities.
+# . (device 16777231, inode 3870229): 23 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 23 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -185,16 +225,8 @@ build-docker: build
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 17):
-	docker build . -t api-rest
-	
-
-get-docs:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 2):
-	go get -u github.com/swaggo/swag/cmd/swag
+#  commands to execute (from `Makefile', line 5):
+	docker build . -t JITScheduler
 	
 
 # Not a target:
@@ -206,28 +238,17 @@ get-docs:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-16 17:53:23
+#  Last modified 2024-03-03 15:10:58
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-test:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 14):
- 
-	go test -v ./test/...
-	
-
+# Not a target:
 build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 8):
-	go build -o bin/restapi cmd/api/main.go
-	
 
 # Not a target:
 .DEFAULT:
@@ -239,28 +260,23 @@ run:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 11):
-	go run cmd/api/main.go
-	
-
-docs: get-docs
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  commands to execute (from `Makefile', line 5):
-	swag init --dir cmd/api --parseDependency --output docs
+#  commands to execute (from `Makefile', line 2):
+	go run main.go
 	
 
 run-docker: build-docker
 #  Implicit rule search has not been done.
+ 
+make: *** No rule to make target `all'.  Stop.
+
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 20):
-	docker run -p 3000:3000 api-rest
+#  commands to execute (from `Makefile', line 8):
+	docker run -p 3000:3000 JITScheduler
 	
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=2/26=8%
+# Load=8/1024=1%, Rehash=0, Collisions=2/22=9%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -272,6 +288,6 @@ run-docker: build-docker
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Jul  7 12:35:24 2022
+# Finished Make data base on Sun Mar  3 16:04:04 2024
 
  

@@ -3,14 +3,15 @@ package kafka
 // SIGUSR1 toggle the pause/resume consumption
 import (
 	"context"
-	"github.com/Buddy-Git/JITScheduler-svc/config"
 	"os"
 	"os/signal"
 	"sync"
 	"syscall"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/config"
+
 	"github.com/Shopify/sarama"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
 	"go.uber.org/zap"
 )
 

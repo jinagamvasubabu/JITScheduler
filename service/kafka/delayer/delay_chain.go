@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
-	"github.com/Buddy-Git/JITScheduler-svc/repository"
-	"github.com/Buddy-Git/JITScheduler-svc/service/kafka"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/repository"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service/kafka"
 	"go.uber.org/zap"
 )
 

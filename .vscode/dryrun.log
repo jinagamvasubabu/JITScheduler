@@ -1,5 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/kritikjain/Desktop/JITScheduler_svc'
-go get -u github.com/swaggo/swag/cmd/swag
-make: Leaving directory `/Users/kritikjain/Desktop/JITScheduler_svc'
+make: Entering directory `/Users/vasubabujinagam/Documents/Repositories/go/JITScheduler-svc'
+go run main.go
+make: Leaving directory `/Users/vasubabujinagam/Documents/Repositories/go/JITScheduler-svc'
  

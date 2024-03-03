@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
-	"github.com/Buddy-Git/JITScheduler-svc/model/dto"
-	"github.com/Buddy-Git/JITScheduler-svc/repository"
 	"github.com/google/uuid"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model/dto"
+	"github.com/jinagamvasubabu/JITScheduler-svc/repository"
 	"go.uber.org/zap"
 )
 

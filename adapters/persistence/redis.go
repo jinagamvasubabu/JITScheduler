@@ -4,9 +4,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/config"
 	"github.com/go-redis/redis"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/config"
 )
 
 var redisClient *redis.Client

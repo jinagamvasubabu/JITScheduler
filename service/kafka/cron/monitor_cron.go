@@ -1,10 +1,10 @@
 package cron
 
 import (
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/persistence"
-	"github.com/Buddy-Git/JITScheduler-svc/constants"
-	"github.com/Buddy-Git/JITScheduler-svc/repository"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/persistence"
+	"github.com/jinagamvasubabu/JITScheduler-svc/constants"
+	"github.com/jinagamvasubabu/JITScheduler-svc/repository"
 	"go.uber.org/zap"
 )
 

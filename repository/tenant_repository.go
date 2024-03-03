@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
 
 	"gorm.io/gorm"
 )

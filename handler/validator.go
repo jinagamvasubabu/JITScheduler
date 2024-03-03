@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/model/dto"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model/dto"
 )
 
 var emailRegex = regexp.MustCompile("^[a-zA-Z0-9.!#$%&'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")
@@ -40,14 +40,14 @@ func ValidateEvent(req *dto.Event) error {
 		return errors.New("invalid type chosen (choose DELAY)")
 	}
 
-	 processAt, err := time.Parse(time.RFC3339, req.ProcessAt)
+	processAt, err := time.Parse(time.RFC3339, req.ProcessAt)
 	if err != nil {
-	 	return errors.New("incorrect format for process_at! Please follow RFC3339 format")
-	 }
+		return errors.New("incorrect format for process_at! Please follow RFC3339 format")
+	}
 
-	 if !time.Now().Add(10 * time.Minute).UTC().Before(processAt) {
-	 	return errors.New("do not create events in the past or with process_at time less than 10 mins")
-	 }
+	if !time.Now().Add(10 * time.Minute).UTC().Before(processAt) {
+		return errors.New("do not create events in the past or with process_at time less than 10 mins")
+	}
 
 	if !isEmailValid(req.UpdatedBy) {
 		return errors.New("incorrect format! specify slice gsuite id instead")

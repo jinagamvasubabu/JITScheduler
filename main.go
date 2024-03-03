@@ -9,17 +9,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	db "github.com/Buddy-Git/JITScheduler-svc/adapters/persistence"
-	"github.com/Buddy-Git/JITScheduler-svc/config"
-	handler "github.com/Buddy-Git/JITScheduler-svc/handler"
-	"github.com/Buddy-Git/JITScheduler-svc/repository"
-	"github.com/Buddy-Git/JITScheduler-svc/service"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	db "github.com/jinagamvasubabu/JITScheduler-svc/adapters/persistence"
+	"github.com/jinagamvasubabu/JITScheduler-svc/config"
+	handler "github.com/jinagamvasubabu/JITScheduler-svc/handler"
+	"github.com/jinagamvasubabu/JITScheduler-svc/repository"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service"
 
 	"github.com/google/uuid"
 
-	cronFunc "github.com/Buddy-Git/JITScheduler-svc/service/kafka/cron"
-	"github.com/Buddy-Git/JITScheduler-svc/service/kafka/delayer"
+	cronFunc "github.com/jinagamvasubabu/JITScheduler-svc/service/kafka/cron"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service/kafka/delayer"
 	"github.com/robfig/cron"
 	"go.uber.org/zap"
 )

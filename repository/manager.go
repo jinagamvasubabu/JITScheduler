@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/Buddy-Git/JITScheduler-svc/model"
-	"github.com/Buddy-Git/JITScheduler-svc/service/kafka"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service/kafka"
 )
 
 type Manager struct {

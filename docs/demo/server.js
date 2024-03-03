@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const io = socketIO(server);
 const kafka = require('kafka-node');
 const Consumer = kafka.Consumer;
-const client = new kafka.KafkaClient({ kafkaHost: 'localhost:9092' }); // Replace with your Kafka broker address
+const client = new kafka.KafkaClient({ kafkaHost: config.KafkaClient }); // Replace with your Kafka broker address
 const consumer = new Consumer(
     client,
     [{ topic: 'events.wakemeup'}],

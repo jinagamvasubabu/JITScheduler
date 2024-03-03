@@ -3,9 +3,9 @@ package kafka
 import (
 	"encoding/json"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
 	"github.com/Shopify/sarama"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
 	"go.uber.org/zap"
 )
 

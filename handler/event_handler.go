@@ -12,10 +12,10 @@ import (
 	"github.com/gorilla/mux"
 	"go.uber.org/zap"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
-	"github.com/Buddy-Git/JITScheduler-svc/model/dto"
-	"github.com/Buddy-Git/JITScheduler-svc/service"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model/dto"
+	"github.com/jinagamvasubabu/JITScheduler-svc/service"
 )
 
 type eventHandler struct {
@@ -84,7 +84,7 @@ func (h eventHandler) FetchAllEventsUnderTenant(w http.ResponseWriter, r *http.R
 	}
 }
 
-//CHANGE THIS TO DEACTIVATE EVENTS
+// CHANGE THIS TO DEACTIVATE EVENTS
 func (h eventHandler) DeactivateEvent(w http.ResponseWriter, r *http.Request) {
 	// Read dynamic id parameter
 	vars := mux.Vars(r)

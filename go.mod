@@ -1,4 +1,4 @@
-module github.com/Buddy-Git/JITScheduler-svc
+module github.com/jinagamvasubabu/JITScheduler-svc
 
 go 1.18
 

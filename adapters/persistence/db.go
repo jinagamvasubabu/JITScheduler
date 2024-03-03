@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Buddy-Git/JITScheduler-svc/adapters/logger"
-	"github.com/Buddy-Git/JITScheduler-svc/config"
-	"github.com/Buddy-Git/JITScheduler-svc/model"
+	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
+	"github.com/jinagamvasubabu/JITScheduler-svc/config"
+	"github.com/jinagamvasubabu/JITScheduler-svc/model"
 	"go.uber.org/zap"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
