@@ -1,0 +1,1 @@
+{"buildTargets":["build","build-docker","docs","get-docs","run","run-docker","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
