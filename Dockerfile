@@ -18,3 +18,5 @@ RUN go build -o main .
 
 # Command to run the executable
 CMD ["./main"]
+
+EXPOSE 3000

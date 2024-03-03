@@ -6,6 +6,7 @@ import (
 
 func InitRouter(t tenantHandler, e eventHandler) *mux.Router {
 	router := mux.NewRouter()
+	router.HandleFunc("/", t.FetchAllTenants).Methods("GET", "OPTIONS")
 	router.HandleFunc("/tenants", t.FetchAllTenants).Methods("GET", "OPTIONS")
 	router.HandleFunc("/tenants/{tenant_id}", t.FetchTenantById).Methods("GET", "OPTIONS")
 	router.HandleFunc("/tenants/{tenant_name}", t.FetchTenantByName).Methods("GET", "OPTIONS")

@@ -79,7 +79,7 @@ func main() {
 		db.GetRedisClient().Del("scheduler_cron_lock", "rescheduler_cron_lock", "monitor_cron_lock")
 		srv.Shutdown(ctx)
 	}()
-	logger.Info("Server started")
+	logger.Info("Server started", zap.String("address", srv.Addr))
 
 	//Run Cron for scheduling events
 	go runCronJobForSchedulingEvents(uuid.New().String(), eventRepository)
@@ -93,9 +93,9 @@ func main() {
 
 // function to recover a panic
 func recoverPanic() {
-	if r := recover(); r != nil {
-		logger.Info("Recovered from panic!!!")
-	}
+	// if r := recover(); r != nil {
+	// 	logger.Info("Recovered from panic!!!")
+	// }
 }
 
 func runCronJobForSchedulingEvents(instanceId string, eventRepository repository.EventRepository) {
