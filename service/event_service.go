@@ -2,9 +2,11 @@ package service
 
 import (
 	"context"
+	"log"
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/jackc/pgtype"
 	"github.com/jinagamvasubabu/JITScheduler-svc/adapters/logger"
 	"github.com/jinagamvasubabu/JITScheduler-svc/model"
 	"github.com/jinagamvasubabu/JITScheduler-svc/model/dto"
@@ -32,13 +34,19 @@ func (e eventService) AddEvent(ctx context.Context, request *dto.Event) (string,
 	event := &model.Event{}
 	event.ID = uuid.New().String()
 	event.TenantID = request.TenantID
-	ProcessAt, _ := time.Parse(time.RFC3339, request.ProcessAt)
+	ProcessAt, _ := time.Parse("2006-01-02 15:04:05", request.ProcessAt)
 	event.ProcessAt = ProcessAt
+	jsonData := pgtype.JSONB{}
+	err := jsonData.Set([]byte(request.Payload))
+	if err != nil {
+		log.Fatal(err)
+	}
+	event.Payload = jsonData
 	event.UpdatedAt = time.Now()
 	event.UpdatedBy = request.UpdatedBy
 	event.Status = model.Status.REQUESTED
 	if err := e.eventRepository.AddEvent(ctx, event); err != nil {
-		logger.Error("Error while creating the event = %s", zap.Error(err))
+		logger.Error("Error while creating the event", zap.Error(err))
 		return "", err
 	}
 	return "success adding an event", nil

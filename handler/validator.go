@@ -24,7 +24,7 @@ func ValidateTenant(req *dto.Tenant) error {
 		return errors.New("topic needs to be specified")
 	}
 	if !isEmailValid(req.UpdatedBy) {
-		return errors.New("incorrect format! specify slice gsuite id instead")
+		return errors.New("incorrect format! specify gsuite id instead")
 	}
 
 	return nil
@@ -45,12 +45,12 @@ func ValidateEvent(req *dto.Event) error {
 		return errors.New("incorrect format for process_at! Please follow RFC3339 format")
 	}
 
-	if !time.Now().Add(10 * time.Minute).UTC().Before(processAt) {
+	if processAt.Before(time.Now().Add(10 * time.Minute)) {
 		return errors.New("do not create events in the past or with process_at time less than 10 mins")
 	}
 
 	if !isEmailValid(req.UpdatedBy) {
-		return errors.New("incorrect format! specify slice gsuite id instead")
+		return errors.New("incorrect format! specify gsuite id instead")
 	}
 
 	return nil

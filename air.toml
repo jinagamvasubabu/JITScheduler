@@ -1,0 +1,7 @@
+# .air.toml
+
+# Commands
+[[tasks]]
+  name = "run"
+  # Define the command to run your application
+  script = "go run main.go"

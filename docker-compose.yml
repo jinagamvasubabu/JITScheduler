@@ -52,6 +52,8 @@ services:
     platform: linux/amd64
     image: wurstmeister/zookeeper
     restart: always
+    ports:
+      - "2181:2181"
     networks:
       - backend-network
 
