@@ -93,9 +93,9 @@ func main() {
 
 // function to recover a panic
 func recoverPanic() {
-	// if r := recover(); r != nil {
-	// 	logger.Info("Recovered from panic!!!")
-	// }
+	if r := recover(); r != nil {
+		logger.Info("Recovered from panic!!!")
+	}
 }
 
 func runCronJobForSchedulingEvents(instanceId string, eventRepository repository.EventRepository) {

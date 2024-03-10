@@ -12,6 +12,9 @@ services:
       - "5432:5432"
     networks:
       - backend-network
+    hostname: postgres  
+    volumes:
+      - pg_data:/var/lib/postgresql/tmp
 
   redis:
     image: redis
@@ -20,6 +23,7 @@ services:
       - "6379:6379"
     networks:
       - backend-network
+
 
   pgadmin:
     image: dpage/pgadmin4
@@ -47,6 +51,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - backend-network
+      
 
   zookeeper:
     platform: linux/amd64
@@ -60,3 +65,6 @@ services:
 networks:
   backend-network:
     driver: bridge
+
+volumes:
+  pg_data:

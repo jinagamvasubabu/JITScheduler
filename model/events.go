@@ -34,7 +34,7 @@ type Event struct {
 	Type         string       `json:"type" valid:"required" gorm:"not null;type:varchar(25);default:DELAY"`
 	ProcessAt    time.Time    `json:"process_at" valid:"required" gorm:"not null;type:timestamp" sql:"index"`
 	CurrentQueue string       `json:"current_queue" gorm:"type:varchar(25)"`
-	Payload      pgtype.JSONB `json:"payload"  gorm:"type:jsonb;default:'{}'"`
+	Payload      pgtype.JSONB `json:"payload"  gorm:"type:jsonb"`
 	Status       string       `json:"status" valid:"required" gorm:"not null;default:REQUESTED"`
 	UpdatedBy    string       `json:"updated_by" valid:"required" gorm:"null"`
 	UpdatedAt    time.Time    `json:"updated_at" valid:"required" gorm:"null"`
